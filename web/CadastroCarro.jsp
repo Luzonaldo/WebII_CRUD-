@@ -13,6 +13,8 @@
     </head>
     <body>
         <h1>Cadastro de Carros</h1>
+        <a href="index.html">Home</a>
+        <a href="CarroServlet">Carros Cadastrados</a>
         
         <% 
             String m = (String)session.getAttribute("msg");

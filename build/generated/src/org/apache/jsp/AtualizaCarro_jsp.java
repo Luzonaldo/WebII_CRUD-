@@ -3,8 +3,9 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import br.edu.ifpe.webII.carro.model.entities.Carro;
 
-public final class CadastroCarro_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class AtualizaCarro_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -44,6 +45,7 @@ public final class CadastroCarro_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
@@ -51,36 +53,43 @@ public final class CadastroCarro_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("        <title>JSP Page</title>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <h1>Cadastro de Carros</h1>\n");
-      out.write("        <a href=\"index.html\">Home</a>\n");
-      out.write("        <a href=\"CarroServlet\">Carros Cadastrados</a>\n");
-      out.write("        \n");
-      out.write("        ");
- 
-            String m = (String)session.getAttribute("msg");
-            
-            if(m != null){
-        
-      out.write("\n");
-      out.write("        <h2>");
-      out.print( m);
-      out.write("</h2>\n");
+      out.write("        <h1>Alterar Carrro já Cadastrado</h1>\n");
       out.write("        ");
 
-            session.removeAttribute("msg");
-            }
+            Carro c = (Carro)session.getAttribute("carro");
         
       out.write("\n");
       out.write("        \n");
-      out.write("         <form method=\"post\" action=\"CarroServlet\">\n");
+      out.write("        <form method=\"post\" action=\"CarroServlet\">\n");
       out.write("            \n");
-      out.write("            Codigo:<input type=\"text\" name=\"codigo\" /><br/>\n");
-      out.write("            Nome:<input type=\"text\" name=\"nome\" /><br/>\n");
-      out.write("            Marca:<input type=\"text\" name=\"marca\" /><br/>\n");
-      out.write("            Ano:<input type=\"text\" name=\"ano\" /><br/>\n");
-      out.write("            cor:<input type=\"text\" name=\"cor\" /><br/>\n");
+      out.write("            <input type=\"hidden\" name=\"op\" value=\"a\"/>\n");
+      out.write("            Código: <input type=\"hidden\" name=\"codigo\" value=\"");
+      out.print( c.getCodigo() );
+      out.write("\"/>");
+      out.print( c.getCodigo() );
+      out.write("<br/>\n");
+      out.write("            Nome: <input type=\"text\" name=\"nome\" value=\"");
+      out.print( c.getNome() );
+      out.write("\"/>");
+      out.print( c.getNome() );
+      out.write("<br/>\n");
+      out.write("            Marca: <input type=\"text\" name=\"marca\" value=\"");
+      out.print( c.getMarca() );
+      out.write("\"/>");
+      out.print( c.getMarca() );
+      out.write("<br/>\n");
+      out.write("            Ano: <input type=\"text\" name=\"ano\" value=\"");
+      out.print( c.getAno() );
+      out.write("\"/>");
+      out.print( c.getAno() );
+      out.write("<br/>\n");
+      out.write("            Cor: <input type=\"text\" name=\"cor\" value=\"");
+      out.print( c.getCor() );
+      out.write("\"/>");
+      out.print( c.getCor() );
+      out.write("<br/>\n");
       out.write("            \n");
-      out.write("            <input type=\"submit\" value=\"cadastrar\"/>\n");
+      out.write("            <input type=\"submit\" value=\"Cadastrar\"/>\n");
       out.write("            \n");
       out.write("        </form>\n");
       out.write("    </body>\n");

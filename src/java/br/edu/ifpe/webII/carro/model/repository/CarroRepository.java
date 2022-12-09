@@ -65,7 +65,8 @@ public class CarroRepository {
                 break;
             }
         }
-        carros.remove(iAux);
+        if(iAux != null)
+            carros.remove(iAux);
     }
 
    public static List<Carro> readAll() {

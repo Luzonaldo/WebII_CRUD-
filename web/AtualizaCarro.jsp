@@ -22,10 +22,10 @@
             
             <input type="hidden" name="op" value="a"/>
             Código: <input type="hidden" name="codigo" value="<%= c.getCodigo() %>"/><%= c.getCodigo() %><br/>
-            Nome: <input type="text" name="nome" value="<%= c.getNome() %>"/><%= c.getNome() %><br/>
-            Marca: <input type="text" name="marca" value="<%= c.getMarca() %>"/><%= c.getMarca() %><br/>
-            Ano: <input type="text" name="ano" value="<%= c.getAno() %>"/><%= c.getAno() %><br/>
-            Cor: <input type="text" name="cor" value="<%= c.getCor() %>"/><%= c.getCor() %><br/>
+            Nome: <input type="text" name="nome" value="<%= c.getNome() %>"/><br/>
+            Marca: <input type="text" name="marca" value="<%= c.getMarca() %>"/><br/>
+            Ano: <input type="text" name="ano" value="<%= c.getAno() %>"/><br/>
+            Cor: <input type="text" name="cor" value="<%= c.getCor() %>"/><br/>
             
             <input type="submit" value="Cadastrar"/>
             

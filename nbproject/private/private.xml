@@ -3,15 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/luzon/Documents/NetBeansProjects/CRUD_Carro_Cliente_JSP/web/index.html</file>
             <file>file:/C:/Users/luzon/Documents/NetBeansProjects/CRUD_Carro_Cliente_JSP/src/java/br/edu/ifpe/webII/carro/controllers/CarroServlet.java</file>
-            <file>file:/C:/Users/luzon/Documents/NetBeansProjects/CRUD_Carro_Cliente_JSP/src/java/br/edu/ifpe/webII/carro/model/entities/Carro.java</file>
             <file>file:/C:/Users/luzon/Documents/NetBeansProjects/CRUD_Carro_Cliente_JSP/web/carro.jsp</file>
             <file>file:/C:/Users/luzon/Documents/NetBeansProjects/CRUD_Carro_Cliente_JSP/src/java/br/edu/ifpe/webII/carro/model/repository/CarroRepository.java</file>
             <file>file:/C:/Users/luzon/Documents/NetBeansProjects/CRUD_Carro_Cliente_JSP/web/VisualizaCarro.jsp</file>
             <file>file:/C:/Users/luzon/Documents/NetBeansProjects/CRUD_Carro_Cliente_JSP/web/CadastroCarro.jsp</file>
             <file>file:/C:/Users/luzon/Documents/NetBeansProjects/CRUD_Carro_Cliente_JSP/web/AtualizaCarro.jsp</file>
-            <file>file:/C:/Users/luzon/Documents/NetBeansProjects/CRUD_Carro_Cliente_JSP/web/META-INF/context.xml</file>
         </group>
     </open-files>
 </project-private>
